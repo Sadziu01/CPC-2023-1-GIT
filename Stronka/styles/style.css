@@ -1,0 +1,14 @@
+body{
+    background-attachment: rgb(48, 43, 43);
+    color:aliceblue;
+    font-family: Arial, sans-serif;
+    margin: auto;
+}   
+
+.headers{
+    font-size: 100px;
+}
+
+#title{
+    padding: 300px;
+}

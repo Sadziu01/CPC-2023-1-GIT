@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sklep motocyklowy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/shop.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Sklep motocyklowy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Strona główna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Sklep</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontakt</a>
+            </li>
+          </ul>
+          <span id="clock" class="navbar-text ml-auto"></span>
+        </div>
+      </nav>
+    
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Sklep motocyklowy</h1>
+        <p class="lead">Najlepsze części i akcesoria dla Twojego motocykla</p>
+      </div>
+    </div>
+    
+    <main>
+        <div class="container">
+        <h2 class="mb-4">Produkty</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200.png?text=Produkt+1" class="card-img-top" alt="Produkt 1">
+                <div class="card-body">
+                <h5 class="card-title">Yamaha YZF-R1</h5>
+                <p class="card-text">99 900,00 zł</p>
+                <a href="summary.html" class="btn btn-primary" onclick="sendValue('Yamaha YZF-R1/99 900,00')">Kup teraz</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200.png?text=Produkt+2" class="card-img-top" alt="Produkt 1">
+                <div class="card-body">
+                <h5 class="card-title">BMW S1000 RR</h5>
+                <p class="card-text">80 400,00 zł</p>
+                <a href="summary.html" class="btn btn-primary" onclick="sendValue('BMW S1000 RR/80 400,00')">Kup teraz</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200.png?text=Produkt+3" class="card-img-top" alt="Produkt 1">
+                <div class="card-body">
+                <h5 class="card-title">Honda CBR 1000RR</h5>
+                <p class="card-text">99 100,00 zł</p>
+                <a href="summary.html" class="btn btn-primary" onclick="sendValue('BMW S1000 RR/80 400,00')">Kup teraz</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </main>
+    <footer class="bg-light text-center py-3">
+        <div class="container">
+          <p class="mb-0">© 2023 My Motorcycle Shop. All rights reserved. Created by Bartosz Sadowski</p>
+        </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/shop.js"></script>
+</body>
+</html>

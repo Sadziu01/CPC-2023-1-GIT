@@ -1,0 +1,11 @@
+#dynamic-text-container {
+    background-color: #F8F9FA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+#dynamic-text-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

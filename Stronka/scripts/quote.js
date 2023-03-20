@@ -31,24 +31,24 @@ function setUpQuoteDisplay(quotes){
     setInterval(changeQuote, quoteTime);
 }
 
-function updateQuoteDiv(){
+function updateQuoteDiv() {
     fadeout();
-    setTimeout(updateHtml, updateQuoteTime)
+    setTimeout(updateHtml, updateQuoteTime);
 }
 
 function changeQuote() {
     currentQuoteNumber = currentQuoteNumber + 1;
     currentQuoteNumber = currentQuoteNumber % numberOfQuotes;
     currentQuote = allQuotes[currentQuoteNumber];
-    updateQuoteDiv()
+    updateQuoteDiv();
 }
 
-function fadeout(){
-    document.getElementById("fade").style.opacity = 0;
+function fadeout() {
+    document.getElementById("fade").style.opacity=0;
 }
 
 function updateHtml() {
     document.getElementById("quote").innerHTML = currentQuote.text;
     document.getElementById("author").innerHTML = currentQuote.author;
-    document.getElementById("fade").style.opacity = '1';
+    document.getElementById("fade").style.opacity = 1;
 }

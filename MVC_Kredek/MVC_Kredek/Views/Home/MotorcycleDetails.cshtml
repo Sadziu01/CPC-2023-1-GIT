@@ -1,0 +1,17 @@
+﻿@model MVC_Kredek.Models.Motorcycle
+
+@{
+    ViewData["Titel"] = "Szczegóły";
+}
+
+<hi>Szczegóły Motocykla</hi>
+<h4>@Model.Name</h4>
+<h4>Przebieg: @Model.Mileage km</h4>
+<img class="rounded" src="~/images/@Model.Image" style="height: 20rem; width: 30rem"/>
+<h5>Opis pizzy</h5>
+<p>@Model.Description</p>
+<h5>Cena: @Model.Price zł</h5>
+
+
+<hr/>
+<a asp-action="AllMotorcycles">Powrót</a>

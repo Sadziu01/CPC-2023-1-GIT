@@ -1,0 +1,44 @@
+﻿@model IEnumerable<MVC_Kredek.Models.Motorcycle>
+
+@{
+    ViewData["Title"] = "Motorcycle";
+}
+
+<h1>Motorcycles:</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Numer</th>
+            <th>Nazwa</th>
+            <th>Cena</th>
+            <th>Przebieg</th>
+            <th>Zdjęcie</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var motorcycle in Model)
+        {
+            <tr>
+                <td>
+                    @motorcycle.Id
+                </td>
+                <td>
+                    @motorcycle.Name
+                </td>
+                <td>
+                    @motorcycle.Price
+                </td>
+                <td>
+                    @motorcycle.Mileage
+                </td>
+                <td>
+                    <img src="~/images/@motorcycle.Image" style="height: 9rem; width: 15rem" class="rounded"/>
+                </td>
+                                <td>
+                    @Html.ActionLink("Szczegoly", "MotorcycleDetails", new {id = motorcycle.Id})
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
